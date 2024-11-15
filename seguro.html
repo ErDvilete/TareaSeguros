@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INTRODUCE LOS DATOS DEL SEGURO</h1>
+    <form action="seguro.php" method="post">
+        <fieldset>
+            <legend>Tomador</legend>
+            <div>
+                <label for="Nombre">Nombre: </label>
+                <input type="text" id="Nombre" name="Nombre" required>
+            </div>
+            <div>
+                <label for="fecha_carné">Fecha obtencion del carné</label>
+                <input type="number" id="fecha_carné" name="fecha_carné" required>
+            </div>
+            <div>
+                <label for="sexo">Sexo</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="mascuilino">Hombre</label>
+                <input type="radio" id="femenino" name="sexo" value="femenino">
+                <label for="femenino">Mujer</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Vehiculo</legend>
+            <div>
+                <label for="Matricula">Matricula: </label>
+                <input type="text" id="Matricula" name="Matricula" required>
+            </div>
+            <div>
+                <label for="año_matriculacion">Año Matriculacion: </label>
+                <input type="number" id="año_matriculacion" name="año_matriculacion" required>
+            </div>
+            <div>
+                <label for="Tipo_combust">Tipo de combustible</label>
+                <select name="combustible" id="combustible">
+                    <option value="electrico">Electrico</option>
+                    <option value="Gasolina">Gasolina</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Gas licuado">Gas licuado</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Modalidad</legend>
+            <div>
+                <label for="tipo_seguro">Tipo de seguro</label>
+            </div>
+            <input type="radio" id="basico" name="Tipo_seguro" value="basico">
+            <label for="basico">Basico</label>
+            <input type="radio" id="Intermedio" name="Tipo_seguro" value="Intermedio">
+            <label for="Intermedio">Intermedio</label>
+            <input type="radio" id="Todo riesgo" name="Tipo_seguro" value="Todo riesgo">
+            <label for="Todo riesgo">Todo riesgo</label>
+        </fieldset>
+        <div>
+            <input type="submit" value="Calcular">
+        </div>
+
+    </form>
+</body>
+</html>
